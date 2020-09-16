@@ -5,15 +5,14 @@
             <input v-model="item1" />
             <input v-model="item2" />
             <input v-model="item3" />
-            <input v-on:submit='loadRecipes' type="submit" value="Submit" />
+        <button v-on:click='loadRecipes'>Submit</button>
         </form>
-        <button v-on:click='loadRecipes'>Click</button>
     </div>
 </template>
 
 <script>
 import { mapFields } from "../../helper.js";
-import { mapActions } from "vuex"
+import { mapActions, mapState } from "vuex"
 
 export default {
     name: "SearchForm",

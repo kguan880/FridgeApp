@@ -12,6 +12,9 @@
                             <jet-nav-link href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
                                 Dashboard
                             </jet-nav-link>
+                              <jet-nav-link href="/fridgeapp" :active="$page.currentRouteName == 'fridgeapp'">
+                                FridgeApp
+                            </jet-nav-link>
                         </div>
                     </div>
 
