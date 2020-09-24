@@ -1,21 +1,31 @@
 <template>
     <div>
         Enter your ingredients here:
+        <div>
         <form action="">
             <input v-model="item1" />
             <input v-model="item2" />
             <input v-model="item3" />
-        <button v-on:click='loadRecipes'>Submit</button>
+            <input type="submit" value="Submit">
         </form>
+        <button v-on:click='loadRecipes'>Go</button>
+        </div>
+        <div v-if="this.$store.state.recipes.length > 1">
+          <display-recipes/>
+        </div>
     </div>
 </template>
 
 <script>
 import { mapFields } from "../../helper.js";
 import { mapActions, mapState } from "vuex"
+import DisplayRecipes from './DisplayRecipes'
 
 export default {
     name: "SearchForm",
+    components: {
+        DisplayRecipes
+    },
     methods: {
         ...mapActions([
             'loadRecipes'

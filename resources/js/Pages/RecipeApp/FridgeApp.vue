@@ -5,7 +5,7 @@
                 <h1>Search for a recipe!</h1>
             </div>
         </template>
-        <SearchForm />
+        <search-form/>
     </app-layout>
 </template>
 

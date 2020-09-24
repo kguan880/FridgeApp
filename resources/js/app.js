@@ -37,12 +37,6 @@ const store = new Vuex.Store({
     },
     actions: {
         loadRecipes({commit, state}){
-            // axios
-            //     .get(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${state.ingredients.item1},+${state.ingredients.item2},+${state.ingredients.item3}`,{
-            //         headers: {
-
-            //         }
-            //     })
             axios({
                 "method":"GET",
                 "url":"https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients",
