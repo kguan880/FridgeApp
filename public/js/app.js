@@ -4128,8 +4128,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Summary"
+  name: "Summary",
+  data: function data() {
+    return {
+      list: {}
+    };
+  },
+  props: ["id"],
+  mounted: function mounted() {
+    var _this = this;
+
+    axios({
+      method: "GET",
+      url: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/".concat(this.id, "/information"),
+      headers: {
+        "content-type": "application/octet-stream",
+        "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+        "x-rapidapi-key": "5c39852eaamsh3c0ab5fa50d28aep1611abjsnaf1fa66de821",
+        useQueryString: true
+      }
+    }).then(function (response) {
+      console.log(response.data);
+      _this.list = response.data;
+    })["catch"](function (error) {
+      console.log(error);
+    });
+  }
 });
 
 /***/ }),
@@ -28039,7 +28068,21 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    Hello\n")])
+  return _c(
+    "div",
+    [
+      _c("h1", [_vm._v(_vm._s(_vm.list.title))]),
+      _vm._v(" "),
+      _c("img", { attrs: { src: _vm.list.image, alt: "" } }),
+      _vm._v(" "),
+      _vm._l(_vm.list.analyzedInstructions[0].steps, function(steps) {
+        return _c("div", { key: steps.number }, [
+          _c("li", [_vm._v(_vm._s(steps.step))])
+        ])
+      })
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -45605,7 +45648,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(laravel_jetstream__WEBPACK_IMPORT
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(portal_vue__WEBPACK_IMPORTED_MODULE_4___default.a);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(axios__WEBPACK_IMPORTED_MODULE_5___default.a);
-var app = document.getElementById('app');
+var app = document.getElementById("app");
 var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   state: {
     ingredients: {
@@ -45628,25 +45671,25 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
       var commit = _ref.commit,
           state = _ref.state;
       axios__WEBPACK_IMPORTED_MODULE_5___default()({
-        "method": "GET",
-        "url": "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients",
-        "headers": {
+        method: "GET",
+        url: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients",
+        headers: {
           "content-type": "application/octet-stream",
           "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
           "x-rapidapi-key": "5c39852eaamsh3c0ab5fa50d28aep1611abjsnaf1fa66de821",
-          "useQueryString": true
+          useQueryString: true
         },
-        "params": {
-          "number": "5",
-          "ranking": "1",
-          "ignorePantry": "false",
-          "ingredients": "".concat(state.ingredients.item1, "%2C").concat(state.ingredients.item2, "%2C").concat(state.ingredients.item3)
+        params: {
+          number: "5",
+          ranking: "1",
+          ignorePantry: "false",
+          ingredients: "".concat(state.ingredients.item1, "%2C").concat(state.ingredients.item2, "%2C").concat(state.ingredients.item3)
         }
       }).then(function (response) {
         return response.data;
       }).then(function (recipes) {
         console.log(recipes);
-        commit('SET_RECIPES', recipes);
+        commit("SET_RECIPES", recipes);
       })["catch"](function (error) {
         console.log(error);
       });

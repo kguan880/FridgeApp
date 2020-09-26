@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "vuex": "^3.5.1"
+        "vuex": "^3.5.1",
+        "ziggy-js": "^0.9.4"
     }
 }

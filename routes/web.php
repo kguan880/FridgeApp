@@ -18,8 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/summary/{id}', function ($id){
-    echo $id;
-});
+    return Inertia\Inertia::render('RecipeApp/Summary', [
+        'id' => $id
+    ]);
+})->name('summary');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
