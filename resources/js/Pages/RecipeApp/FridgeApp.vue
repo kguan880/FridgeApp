@@ -1,25 +1,39 @@
 <template>
     <app-layout>
-        <template #header>
-            <div>
-                <h1>Search for a recipe!</h1>
-            </div>
-        </template>
+        <div class="app-container">
+        <Header/>
         <search-form/>
+        </div>
     </app-layout>
 </template>
 
 <script>
 import AppLayout from "./../../Layouts/AppLayout";
 import SearchForm from "./SearchForm"
+import Header from './Header'
 
 export default {
     name: "FridgeApp",
     components: {
         AppLayout,
-        SearchForm
+        SearchForm,
+        Header
     }
 };
 </script>
 
-<style scoped></style>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>

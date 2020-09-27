@@ -6,7 +6,6 @@
             <input v-model="item1" />
             <input v-model="item2" />
             <input v-model="item3" />
-            <input type="submit" value="Submit">
         </form>
         <button v-on:click='loadRecipes'>Go</button>
         </div>

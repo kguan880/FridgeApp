@@ -33,19 +33,22 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
 }
 
 .recipe-item{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 100px;
     height: 500px;
     border-radius: 25px;
     text-align: center;
     align-items: center;
     clip-path: inset(0 0 85% 0);
     transition: clip-path 1s;
-    margin: 5px;
+    margin: 4px;
+    flex: 0 1 20%;
 }
 
 .recipe-item h2{

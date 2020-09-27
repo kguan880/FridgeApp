@@ -48,9 +48,9 @@ const store = new Vuex.Store({
                     useQueryString: true
                 },
                 params: {
-                    number: "5",
+                    number: "10",
                     ranking: "1",
-                    ignorePantry: "false",
+                    ignorePantry: "true",
                     ingredients: `${state.ingredients.item1}%2C${state.ingredients.item2}%2C${state.ingredients.item3}`
                 }
             })
