@@ -4116,14 +4116,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   components: {
     DisplayRecipes: _DisplayRecipes__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapActions"])(['loadRecipes'])),
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapActions"])(["loadRecipes"])),
   computed: {
     item1: {
       get: function get() {
         return this.$store.state.ingredients.item1;
       },
       set: function set(value) {
-        this.$store.commit('SET_ITEM1', value);
+        this.$store.commit("SET_ITEM1", value);
       }
     },
     item2: {
@@ -4131,7 +4131,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         return this.$store.state.ingredients.item2;
       },
       set: function set(value) {
-        this.$store.commit('SET_ITEM2', value);
+        this.$store.commit("SET_ITEM2", value);
       }
     },
     item3: {
@@ -4139,7 +4139,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         return this.$store.state.ingredients.item3;
       },
       set: function set(value) {
-        this.$store.commit('SET_ITEM3', value);
+        this.$store.commit("SET_ITEM3", value);
       }
     }
   }
@@ -4156,6 +4156,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 //
 //
 //
@@ -4166,8 +4167,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Summary",
+  components: {
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
   data: function data() {
     return {
       list: {}
@@ -4944,7 +4958,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".recipe-grid-display[data-v-37567ab0]{\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-flow: row wrap;\n  position: relative;\n}\n.recipe-item[data-v-37567ab0]{\n  display: flex;\n  flex-direction: column;\n  width: 100px;\n  height: 500px;\n  border-radius: 25px;\n  text-align: center;\n  align-items: center;\n  -webkit-clip-path: inset(0 0 85% 0);\n          clip-path: inset(0 0 85% 0);\n  transition: -webkit-clip-path 1s;\n  transition: clip-path 1s;\n  transition: clip-path 1s, -webkit-clip-path 1s;\n  margin: 4px;\n  flex: 0 1 20%;\n}\n.recipe-item h2[data-v-37567ab0]{\n  padding-top: 25px;\n  padding-bottom: 50px;\n}\n.recipe-item[data-v-37567ab0]:hover {\n  box-shadow: inset 0 0 80px 80px rgba(255, 255, 255, 0.2);\n  -webkit-clip-path: inset(0 0 0 0);\n          clip-path: inset(0 0 0 0);\n}\n.grid-colour-red[data-v-37567ab0]{\n  background-color: red;\n}\n.grid-colour-green[data-v-37567ab0]{\n  background-color: green;\n}\r\n", ""]);
+exports.push([module.i, ".recipe-grid-display[data-v-37567ab0]{\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-flow: row wrap;\n  position: relative;\n}\n.recipe-item[data-v-37567ab0]{\n  display: flex;\n  flex-direction: column;\n  width: 100px;\n  height: 500px;\n  border-radius: 25px;\n  text-align: center;\n  align-items: center;\n  -webkit-clip-path: inset(0 0 85% 0);\n          clip-path: inset(0 0 85% 0);\n  transition: -webkit-clip-path 1s;\n  transition: clip-path 1s;\n  transition: clip-path 1s, -webkit-clip-path 1s;\n  margin: 4px;\n  flex: 0 1 20%;\n}\n.recipe-item h2[data-v-37567ab0]{\n  padding-top: 25px;\n  padding-bottom: 50px;\n}\n.recipe-item[data-v-37567ab0]:hover {\n  box-shadow: inset 0 0 80px 80px rgba(255, 255, 255, 0.2);\n  -webkit-clip-path: inset(0 0 0 0);\n          clip-path: inset(0 0 0 0);\n}\n.grid-colour-red[data-v-37567ab0]{\n  background-color: lightcoral;\n}\n.grid-colour-green[data-v-37567ab0]{\n  background-color: lightgreen;\n}\r\n", ""]);
 
 // exports
 
@@ -4983,6 +4997,44 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 // module
 exports.push([module.i, ".app-header[data-v-1cda8fb2] {\n  font-size: 4em;\n  text-align: center;\n}\r\n\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".form-container[data-v-74cb19b1] {\n  display: flex;\n  flex-direction: column;\n  width: 35vw;\n  background-color:lightblue;\n  border-radius: 25px;\n  box-shadow: 5px 5px lightgrey;\n}\n.form[data-v-74cb19b1] {\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  font-size: 2rem;\n  width: 100%;\n  padding: 20px;\n}\n.form input[data-v-74cb19b1] {\n  margin: 5px;\n}\n.button[data-v-74cb19b1] {\n  font-size: 2rem;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/RecipeApp/Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".page-container[data-v-192da05e]{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n  width: 100vw;\n  height: auto;\n}\n.page-image[data-v-192da05e] {\n  width: 40%;\n  margin: 10px;\n}\n.page-image img[data-v-192da05e]{\n  width: 100%;\n  height: 100%;\n}\n.recipe-summary[data-v-192da05e] {\n  width: 50%;\n  background-color: lightblue;\n  box-shadow: 5px 5px lightgrey;\n  padding: 20px;\n  border-radius: 25px;\n  margin: 10px;\n}\r\n", ""]);
 
 // exports
 
@@ -24364,6 +24416,66 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/RecipeApp/Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -28824,9 +28936,9 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._v("\n    Enter your ingredients here:\n    "),
-    _c("div", [
-      _c("form", { attrs: { action: "" } }, [
+    _c("div", { staticClass: "form-container" }, [
+      _c("form", { staticClass: "form" }, [
+        _vm._v("\n            Enter your ingredients here:\n            "),
         _c("input", {
           directives: [
             {
@@ -28888,7 +29000,9 @@ var render = function() {
         })
       ]),
       _vm._v(" "),
-      _c("button", { on: { click: _vm.loadRecipes } }, [_vm._v("Go")])
+      _c("button", { staticClass: "button", on: { click: _vm.loadRecipes } }, [
+        _vm._v("Go")
+      ])
     ]),
     _vm._v(" "),
     this.$store.state.recipes.length > 1
@@ -28918,21 +29032,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("h1", [_vm._v(_vm._s(_vm.list.title))]),
+  return _c("app-layout", [
+    _c("div", { staticClass: "page-container" }, [
+      _c("div", { staticClass: "page-image" }, [
+        _c("img", { attrs: { src: _vm.list.image, alt: "" } })
+      ]),
       _vm._v(" "),
-      _c("img", { attrs: { src: _vm.list.image, alt: "" } }),
-      _vm._v(" "),
-      _vm._l(_vm.list.analyzedInstructions[0].steps, function(steps) {
-        return _c("div", { key: steps.number }, [
-          _c("li", [_vm._v(_vm._s(steps.step))])
-        ])
-      })
-    ],
-    2
-  )
+      _c(
+        "div",
+        { staticClass: "recipe-summary" },
+        [
+          _c("h1", [_vm._v(_vm._s(_vm.list.title))]),
+          _vm._v(" "),
+          _vm._l(_vm.list.analyzedInstructions[0].steps, function(steps) {
+            return _c("div", { key: steps.number }, [
+              _c("li", [_vm._v(_vm._s(steps.step))])
+            ])
+          })
+        ],
+        2
+      )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -46049,7 +46170,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SearchForm_vue_vue_type_template_id_74cb19b1_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SearchForm.vue?vue&type=template&id=74cb19b1&scoped=true& */ "./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=template&id=74cb19b1&scoped=true&");
 /* harmony import */ var _SearchForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SearchForm.vue?vue&type=script&lang=js& */ "./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _SearchForm_vue_vue_type_style_index_0_id_74cb19b1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css& */ "./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -46057,7 +46180,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _SearchForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _SearchForm_vue_vue_type_template_id_74cb19b1_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _SearchForm_vue_vue_type_template_id_74cb19b1_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -46086,6 +46209,22 @@ component.options.__file = "resources/js/Pages/RecipeApp/SearchForm.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./SearchForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css& ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchForm_vue_vue_type_style_index_0_id_74cb19b1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/SearchForm.vue?vue&type=style&index=0&id=74cb19b1&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchForm_vue_vue_type_style_index_0_id_74cb19b1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchForm_vue_vue_type_style_index_0_id_74cb19b1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchForm_vue_vue_type_style_index_0_id_74cb19b1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchForm_vue_vue_type_style_index_0_id_74cb19b1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchForm_vue_vue_type_style_index_0_id_74cb19b1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -46118,7 +46257,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Summary_vue_vue_type_template_id_192da05e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Summary.vue?vue&type=template&id=192da05e&scoped=true& */ "./resources/js/Pages/RecipeApp/Summary.vue?vue&type=template&id=192da05e&scoped=true&");
 /* harmony import */ var _Summary_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Summary.vue?vue&type=script&lang=js& */ "./resources/js/Pages/RecipeApp/Summary.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Summary_vue_vue_type_style_index_0_id_192da05e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css& */ "./resources/js/Pages/RecipeApp/Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -46126,7 +46267,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Summary_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Summary_vue_vue_type_template_id_192da05e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Summary_vue_vue_type_template_id_192da05e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -46155,6 +46296,22 @@ component.options.__file = "resources/js/Pages/RecipeApp/Summary.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Summary_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Summary.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/Summary.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Summary_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/RecipeApp/Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css&":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/Pages/RecipeApp/Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css& ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Summary_vue_vue_type_style_index_0_id_192da05e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/RecipeApp/Summary.vue?vue&type=style&index=0&id=192da05e&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Summary_vue_vue_type_style_index_0_id_192da05e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Summary_vue_vue_type_style_index_0_id_192da05e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Summary_vue_vue_type_style_index_0_id_192da05e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Summary_vue_vue_type_style_index_0_id_192da05e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Summary_vue_vue_type_style_index_0_id_192da05e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

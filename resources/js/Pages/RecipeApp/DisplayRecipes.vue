@@ -62,10 +62,10 @@ export default {
 }
 
 .grid-colour-red{
-    background-color: red;
+    background-color: lightcoral;
 }
 
 .grid-colour-green{
-    background-color: green;
+    background-color: lightgreen;
 }
 </style>
